@@ -1,0 +1,69 @@
+#appWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+#form {
+  display: grid;
+  grid-template-areas:
+    "t t d "
+    "i  i b "
+    "tp tp w";
+  grid-gap: 10px;
+  background: #464d45;
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#text {
+  grid-area: t;
+}
+#wind {
+  grid-area: w;
+}
+#inputContainer {
+  grid-area: i;
+}
+#input {
+  height: 30px;
+  border-radius: 20px;
+  border-width: 0;
+  padding-left: 10px;
+}
+#buttonContainer {
+  grid-area: b;
+}
+#temp {
+  grid-area: tp;
+}
+#btn {
+  cursor: pointer;
+  background: #f2f3f4;
+  border-radius: 20px;
+  height: 24px;
+  border-width: 0;
+}
+#decoration {
+  grid-area: d;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+#item {
+  border-radius: 200px;
+}
+#decoration #item:nth-child(1) {
+  background-color: red;
+}
+
+#decoration #item:nth-child(2) {
+  background-color: green;
+}
+
+#decoration #item:nth-child(3) {
+  background-color: blue;
+}
